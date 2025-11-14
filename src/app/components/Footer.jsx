@@ -23,7 +23,7 @@ export default function Footer() {
             <h4 className="font-semibold">Product</h4>
             <ul className="space-y-2 text-sm opacity-75">
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
+                <Link href="/find-tutors" className="hover:opacity-100 transition-opacity">
                   Find Tutors
                 </Link>
               </li>
@@ -33,7 +33,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
+                <Link href="/pricing" className="hover:opacity-100 transition-opacity">
                   Pricing
                 </Link>
               </li>
@@ -50,7 +50,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
+                <Link href="/blog" className="hover:opacity-100 transition-opacity">
                   Blog
                 </Link>
               </li>
@@ -72,12 +72,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
+                <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity">
                   Privacy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
+                <Link href="/terms" className="hover:opacity-100 transition-opacity">
                   Terms
                 </Link>
               </li>

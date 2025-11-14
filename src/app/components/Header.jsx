@@ -5,9 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User } from 'lucide-react';
 
-/* -------------------------------------------------------------------------- */
-/* 🔴 Login Modal                                                             */
-/* -------------------------------------------------------------------------- */
+
 function LoginModal({ onClose, onSwitchToRegister, onLoginSuccess }) {
   const [formData, setFormData] = useState({
     name: "",
@@ -467,9 +465,9 @@ export default function Header() {
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-8 items-center">
             <Link className=" text-purple-600" href="/find-tutors">Find Tutors</Link>
-            <Link className=" text-purple-600" href="/Pricing">Pricing</Link>
-            <Link className=" text-purple-600" href="#">How It Works</Link>
-            <Link className=" text-purple-600" href="#">Blog</Link>
+            <Link className=" text-purple-600" href="/pricing">Pricing</Link>
+            <Link className=" text-purple-600" href="/how-works">How It Works</Link>
+            <Link className=" text-purple-600" href="/blog">Blog</Link>
             <Link className=" text-purple-600" href="/educationalcounselor">Educational Counselor</Link>
           </nav>
 
