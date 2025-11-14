@@ -31,7 +31,7 @@ const TermsCondition = () => {
           <h2 className="text-2xl font-semibold mt-8 mb-3 text-gray-900">
             For Students
           </h2>
-          <ul class="list-disc pl-6 space-y-3 text-gray-700 mb-6">
+          <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-6">
             <li>
               You can not share contact details in the job posting. Accounts
               that do that are automatically banned.
@@ -54,7 +54,7 @@ const TermsCondition = () => {
           <h2 className="text-2xl font-semibold mt-8 mb-3 text-gray-900">
             For Tutors
           </h2>
-          <ul class="list-disc pl-6 space-y-3 text-gray-700 mb-6">
+          <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-6">
             <li>
               We do not vet students for their credit history or payment record.
               It's your responsibility to check their credentials and manage
