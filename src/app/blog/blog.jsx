@@ -113,7 +113,7 @@ const BlogSection = () => {
 
                   <div className="text-left">
                     <a
-                      href="#"
+                      href="/blog-detail"
                       className="text-blue-600 font-semibold hover:underline"
                     >
                       Read More →

@@ -124,6 +124,10 @@
     @apply bg-background text-foreground;
   }
 }
-
-
+.swiper-wrapper {
+  padding: 0px 0 50px; 
+}
+.swiper-pagination {
+  bottom: -5px !important;
+}
 
