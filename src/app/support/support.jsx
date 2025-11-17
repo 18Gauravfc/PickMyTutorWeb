@@ -1,6 +1,6 @@
 "use client";
 import React,{useState} from "react";
-import CTASection from "../components/homePageComponent/CTASection";
+import CTASection from "../../components/homePageComponent/CTASection";
 import { ChevronDown, MessageCircle, Phone, Mail, BookOpen, AlertCircle, Users, Zap, Sparkles } from 'lucide-react';
 
 const faqItems = [

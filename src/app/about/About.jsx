@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import { Users, Target, Award, Zap, Sparkles } from "lucide-react";
-import CTASection from '../components/homePageComponent/CTASection';
-import StatsSection from '../components/homePageComponent/StatsSection';
-import HeroSection from '../components/homePageComponent/hero-section';
+import CTASection from '../../components/homePageComponent/CTASection';
+import StatsSection from '../../components/homePageComponent/StatsSection';
+import HeroSection from '../../components/homePageComponent/hero-section';
 
 const About = () => {
   return (
