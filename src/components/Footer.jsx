@@ -28,8 +28,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
-                  For Tutors
+                <Link href="/how-works" className="hover:opacity-100 transition-opacity">
+                  How Its Work
                 </Link>
               </li>
               <li>
@@ -55,7 +55,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
+                <Link href="/support" className="hover:opacity-100 transition-opacity">
                   Support
                 </Link>
               </li>
@@ -67,7 +67,7 @@ export default function Footer() {
             <h4 className="font-semibold">Company</h4>
             <ul className="space-y-2 text-sm opacity-75">
               <li>
-                <Link href="#" className="hover:opacity-100 transition-opacity">
+                <Link href="/about" className="hover:opacity-100 transition-opacity">
                   About
                 </Link>
               </li>
