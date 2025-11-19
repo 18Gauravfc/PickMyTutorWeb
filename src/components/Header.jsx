@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User } from 'lucide-react';
+import  BASE_URL from "@/utils/api";
 
 
 function LoginModal({ onClose, onSwitchToRegister, onLoginSuccess }) {
@@ -14,7 +15,6 @@ function LoginModal({ onClose, onSwitchToRegister, onLoginSuccess }) {
   });
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const baseUrl = "https://test.pearl-developer.com/pickmytutor/public/api";
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,11 +24,11 @@ function LoginModal({ onClose, onSwitchToRegister, onLoginSuccess }) {
     setLoading(true);
     setMessage("");
     try {
-      const res = await fetch(`${baseUrl}/auth/login`, {
+      const res = await fetch(`${BASE_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json",
+          "Accept": "application/json",
         },
         credentials: "include",
         body: JSON.stringify(formData),

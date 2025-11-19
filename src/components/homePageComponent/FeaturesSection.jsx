@@ -1,8 +1,19 @@
+'use client';
 import React from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Award, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button"; // only if using shadcn/ui buttons
-const FeaturesSection = () => {
+import { Button } from "@/components/ui/button";
+const FeaturesSection = ({user}) => {
+  const router = useRouter();
+
+  const handleBecomeTutor = () => {
+    if (!user) {
+      alert("Please login first!");
+      return;
+    }
+    router.push("/become-tutor");
+  };
   return (
     <section className="relative py-20 md:py-32 lg:py-40 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
@@ -35,9 +46,11 @@ const FeaturesSection = () => {
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
-              <Button size="lg" variant="outline" className="gap-2 bg-transparent">
+            <Link href="/become-tutor" passHref>
+              <Button size="lg" variant="outline" className="gap-2 bg-transparent" onClick={handleBecomeTutor}>
                 Become a Tutor
               </Button>
+            </Link>
             </div>
             <div className="pt-8 border-t border-border space-y-4">
               <div className="grid grid-cols-3 gap-6">
